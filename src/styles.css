@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: disc;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /*
+   * CSS image reference example.
+   */
+  background-image: url('./images/bg-pattern.png');
+}
+
+.countries-item {
+  font-weight: 600;
+}
+
+.country-item {
+  list-style-type: none;
+}
+
+.content {
+  display: flex;
+  max-width: 600px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.country-item h1 {
+  text-align: center;
+}
+
+.image img {
+  width: 300px;
+  height: 300px;
+}
+
+.country-text p, 
+.country-text ul {
+  font-weight: 600;
+}
+
+.country-text span, 
+.country-text li {
+  font-weight: normal;
+}
