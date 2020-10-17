@@ -23,6 +23,11 @@ body {
   background-image: url('./images/bg-pattern.png');
 }
 
+.countries {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .countries-item {
   font-weight: 600;
 }

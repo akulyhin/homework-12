@@ -15,7 +15,10 @@ import "@pnotify/core/dist/BrightTheme.css";
 refs.searchInput.addEventListener('input', debounce((e) => {
      let name = e.target.value;
      const url = `https://restcountries.eu/rest/v2/name/${name}`
-
+     if( name === '') {
+        refs.countries.innerHTML = '';
+     }
+     else {
     fetch(url).then(res => res.json())
     .then(data => {
         if(data.length >= 2 && data.length < 10) {
@@ -47,7 +50,7 @@ refs.searchInput.addEventListener('input', debounce((e) => {
     function createItem (place, data) {
         place.innerHTML = data;
     }
-},500))
+}},500))
 
 
 
