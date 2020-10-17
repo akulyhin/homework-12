@@ -46,6 +46,7 @@ import "@pnotify/core/dist/BrightTheme.css";
 
         else {
             setTimeout(createItem, 300, refs.countries, templateCountries(data));
+            console.log(data);
         }
     });
 

@@ -1,0 +1,38 @@
+.countries {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .countries-item {
+    font-weight: 600;
+  }
+  
+  .country-item {
+    list-style-type: none;
+  }
+  
+  .content {
+    display: flex;
+    max-width: 600px;
+      margin: 0 auto;
+      justify-content: space-around;
+  }
+  
+  .country-item h1 {
+    text-align: center;
+  }
+  
+  .image img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .country-text p, 
+  .country-text ul {
+    font-weight: 600;
+  }
+  
+  .country-text span, 
+  .country-text li {
+    font-weight: normal;
+  }
