@@ -27,7 +27,7 @@ import "@pnotify/core/dist/BrightTheme.css";
 
         else if(data.length > 10) {
             refs.spinner.classList.add('is-hidden');
-            console.log('Ошибка');
+            refs.countries.innerHTML = '';
             error({
                 title: 'Error',
                 text: 'to many matches found countries',
@@ -37,6 +37,7 @@ import "@pnotify/core/dist/BrightTheme.css";
 
         else if(data.status === 404) {
             refs.spinner.classList.add('is-hidden');
+            refs.countries.innerHTML = '';
             error({
                 title:'Error',
                 text: 'No country found',
