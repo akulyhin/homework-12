@@ -15,13 +15,15 @@ import "@pnotify/core/dist/BrightTheme.css";
      const url = `https://restcountries.eu/rest/v2/name/${searchQuery}`
      if( searchQuery === '') {
         refs.countries.innerHTML = '';
+        return;
      }
+
      else {
-        refs.spinner.classList.remove('is-hidden'); 
+    refs.spinner.classList.remove('is-hidden'); 
     fetch(url)
     .then(res => res.json())
     .then(data => {
-        if(data.length >= 2 && data.length < 10) {
+        if(data.length >= 2 && data.length <= 10) {
             setTimeout(createItem, 300, refs.countries, templateCountry(data));
         }
 
