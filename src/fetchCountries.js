@@ -18,7 +18,6 @@ import "@pnotify/core/dist/BrightTheme.css";
         return;
      }
 
-     else {
     refs.spinner.classList.remove('is-hidden'); 
     fetch(url)
     .then(res => res.json())
@@ -57,4 +56,4 @@ import "@pnotify/core/dist/BrightTheme.css";
         refs.spinner.classList.add('is-hidden');
         place.innerHTML = data;
     }
-}}
+}
